@@ -1,0 +1,39 @@
+.swiper-wrapper {
+}
+.image-slaider__image {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.image-slaider__image img {
+  width: 100%;
+}
+.image-slider {
+  height: 172px;
+}
+.swiper-button-prev {
+  top: 22%;
+  left: 18%;
+}
+.swiper-button-next {
+  top: 22%;
+  right: 18%;
+}
+.swiper-button-prev::after {
+  color: rgba(202, 54, 185, 0.8);
+}
+.swiper-button-next::after {
+  color: rgba(202, 54, 185, 0.8);
+}
+.swiper-pagination {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.swiper-pagination span {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #5c3249;
+  font-size: 14px;
+}

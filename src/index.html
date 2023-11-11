@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.scss" />
+    <title>Clone_wildberries</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="conteiner">
+        <div class="wrapper-header">
+          <div class="logo">Wildberries</div>
+          <div class="input-search">
+            <input type="text" />
+          </div>
+          <div class="shopping-cart btn" data-path="shop-cart">Корзина</div>
+        </div>
+      </div>
+    </header>
+    <section class="slaider">
+      <div class="conteiner">
+        <div class="image-slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image-slaider__image">
+                <img src="./img/slaider/1697545999003338071.jpg" alt="#" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-slaider__image">
+                <img src="./img/slaider/1698656635150580453.jpg" alt="#" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-slaider__image">
+                <img src="./img/slaider/1699010097014533648.jpg" alt="#" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-slaider__image">
+                <img src="./img/slaider/1699014001753190481.jpg" alt="#" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-slaider__image">
+                <img src="./img/slaider/1699020897510046981.jpg" alt="#" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+    <section class="product-cards">
+      <div class="conteiner">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="wrapper-product-cards"></div>
+      </div>
+    </section>
+    <div class="modals">
+      <div class="modal-overlay">
+        <div class="modal" data-target="shop-cart">
+          <h2>Ваш заказ</h2>
+          <div class="shop-cart-null">
+            <h3>Корзина пуста</h3>
+          </div>
+          <div class="modal-shop-cart"></div>
+          <div class="shop-cart-order none">
+            <div class="shop-cart-total">
+              <h3>Итого:</h3>
+              <p class="shop-cart-pay">0</p>
+            </div>
+            <button class="btn-pay">Заказать</button>
+          </div>
+        </div>
+
+        <div class="modal modal--2" data-target="Card">товар</div>
+      </div>
+    </div>
+    <footer></footer>
+    <script type="module" src="./script/script.js"></script>
+    <script src="./script/shopping-cart.js"></script>
+  </body>
+</html>
