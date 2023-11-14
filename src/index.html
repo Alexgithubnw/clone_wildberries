@@ -12,7 +12,11 @@
         <div class="wrapper-header">
           <div class="logo">Wildberries</div>
           <div class="input-search">
-            <input type="text" />
+            <input
+              type="text"
+              class="search"
+              placeholder="Найти на wildberries"
+            />
           </div>
           <div class="shopping-cart btn" data-path="shop-cart">Корзина</div>
         </div>
@@ -48,19 +52,15 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
 
         <div class="swiper-pagination"></div>
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <div class="swiper-scrollbar"></div>
       </div>
     </section>
     <section class="product-cards">
       <div class="conteiner">
-        <i class="fa-solid fa-cart-shopping"></i>
         <div class="wrapper-product-cards"></div>
       </div>
     </section>
@@ -74,18 +74,19 @@
           <div class="modal-shop-cart"></div>
           <div class="shop-cart-order none">
             <div class="shop-cart-total">
-              <h3>Итого:</h3>
-              <p class="shop-cart-pay">0</p>
+              <p>Итого:</p>
+              <span class="shop-cart-pay"></span>
+              <p>Руб.</p>
             </div>
-            <button class="btn-pay">Заказать</button>
+            <div class="btn-pay">Заказать</div>
           </div>
         </div>
 
-        <div class="modal modal--2" data-target="Card">товар</div>
+        <div class="modal modal-card" data-target="Card"></div>
       </div>
     </div>
     <footer></footer>
     <script type="module" src="./script/script.js"></script>
-    <script src="./script/shopping-cart.js"></script>
+    <script src="./script/search.js"></script>
   </body>
 </html>
